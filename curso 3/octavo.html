@@ -1,0 +1,40 @@
+<meta charset="UTF-8"> 
+
+
+<script>
+    function imprimir(frase) {
+        document.write("<big>"+ frase+ "</big>");
+        saltolinea(); 
+    } 
+    
+    function saltolinea(){
+        document.write("<br>");  
+        document.write("<br>");  
+        document.write("<br>");  
+        document.write("<hr>");  
+        document.write("<br>");  
+        document.write("<br>");  
+    } 
+
+    var act=2023
+    imprimir("la suma de la edad de tres personas es");
+
+    var edadj=10
+    var edadp=25
+    var edadl=15
+    var promedio=((edadj+edadp+edadl)/3) 
+
+    imprimir("el primero tiene la edad de "+(act-2003)+" años");
+     
+    imprimir("su año de nacimiento es "+ (act-20));
+    
+    act=2024
+    imprimir("el segundo tiene la edad de "+(act-1998)+" años");
+    
+    imprimir("su año de nacimiento es "+ (act-25));
+    
+    act=2026
+    imprimir("el tercero tiene la edad de "+(act-2014)+" años");
+     
+    imprimir("su año de nacimiento es "+ (act-15));
+</script>   

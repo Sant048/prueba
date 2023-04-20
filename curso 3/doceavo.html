@@ -1,0 +1,28 @@
+<meta charset="UTF-8"> 
+
+<h1>cual es el numero?</h1>
+<script>
+    function imprimir(frase) {
+        document.write(frase);
+        saltolinea(); 
+    } 
+    
+    function saltolinea(){
+        document.write("<br>");  
+        document.write("<br>");  
+        document.write("<br>");  
+        document.write("<hr>");  
+        document.write("<br>");  
+        document.write("<br>");  
+    } 
+    var numeropensado=Math.round(Math.random()*10);
+    var numerolanzado = parseInt(prompt("numero entre cero y 10"))
+
+    if (numeropensado==numerolanzado) {
+        imprimir("usted acerto")
+    } else if(numeropensado!=numerolanzado) 
+    {
+    imprimir("usted erro,el numero pensado era "+ numeropensado)
+        
+    }
+    </script>

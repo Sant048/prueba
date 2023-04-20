@@ -1,0 +1,37 @@
+<meta charset="UTF-8"> 
+
+<h1>puntos de una quipo de futbol</h1>
+<script>
+    function imprimir(frase) {
+        document.write(frase);
+        saltolinea(); 
+    } 
+    
+    function saltolinea(){
+        document.write("<br>");  
+        document.write("<br>");  
+        document.write("<br>");  
+        document.write("<hr>");  
+        document.write("<br>");  
+        document.write("<br>");  
+    } 
+
+   var victoria=parseInt(prompt("cantidad de vicotrias"));
+   var empate=parseInt(prompt("cantidad de empates"))
+
+
+   var puntostoltales=(victoria*3+empate);
+
+   imprimir("El total de puntos del equipo es: "+ puntostoltales)
+    if (puntostoltales>28) {
+        imprimir("mejoro")
+    } else if(puntostoltales<28){
+        imprimir("es peor")
+    } else if(puntostoltales==28){
+        imprimir("est igual")
+    }
+   
+  
+   
+   
+</script>   

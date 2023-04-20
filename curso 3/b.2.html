@@ -1,0 +1,32 @@
+<meta charset="UTF-8"> 
+<h1>punte html a javascript</h1>
+
+<input/>
+<button>verficar si acerto el valor</button>
+<script>
+    var secreto=[3,2,1,5]
+    var input=document.querySelector("input");
+    input.focus();
+    function verificar() {
+        var encontrado=false;
+       for (var posicion =0;posicion<secreto.length; posicion++) {
+        if(parseInt(input.value)==secreto[posicion]){
+
+         alert("usted acerto")
+         encontrado=true
+         break;
+        }
+          }
+
+          if(encontrado==false) {
+            alert("usted erro")
+            
+        }
+    input.value="";
+    input.focus();
+}
+var button=document.querySelector("button")
+button.onclick=verificar;
+
+</script>
+
